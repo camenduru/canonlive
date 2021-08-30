@@ -36,6 +36,7 @@
             // 
             // LiveBox1
             // 
+            this.LiveBox1.BackColor = System.Drawing.Color.Lime;
             this.LiveBox1.Location = new System.Drawing.Point(0, 0);
             this.LiveBox1.Margin = new System.Windows.Forms.Padding(0);
             this.LiveBox1.Name = "LiveBox1";
@@ -54,6 +55,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Lime;
             this.ClientSize = new System.Drawing.Size(960, 640);
             this.Controls.Add(this.LiveBox1);
             this.Name = "LiveViewForm";
