@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "canonlive", "canonlive\canonlive.csproj", "{666ACA8B-776D-4DA3-B5C2-E81EC9853D31}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{666ACA8B-776D-4DA3-B5C2-E81EC9853D31}.Debug|x86.ActiveCfg = Release|x86
+		{666ACA8B-776D-4DA3-B5C2-E81EC9853D31}.Debug|x86.Build.0 = Release|x86
+		{666ACA8B-776D-4DA3-B5C2-E81EC9853D31}.Release|x86.ActiveCfg = Release|x86
+		{666ACA8B-776D-4DA3-B5C2-E81EC9853D31}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {42A9EE56-6DF6-46B8-8C80-B8D8458365D2}
+	EndGlobalSection
+EndGlobal
