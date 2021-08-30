@@ -15,6 +15,7 @@ namespace canonlive
         IntPtr cameraListRef = new IntPtr();
         IntPtr[] camera = new IntPtr[1];
         int cameraCount;
+        int KeepAliveCounter = 0;
 
         public LiveViewForm()
         {
@@ -74,5 +75,10 @@ namespace canonlive
             }
         }
 
+        private void KeepAliveTimer_Tick(object sender, EventArgs e)
+        {  
+            this.Text = "canon live | v0.1 | dev:camenduru | " + LiveBox1.Width + "x" + LiveBox1.Height + " | Keep Alive " + KeepAliveCounter++;
+            cameraControl.KeepAlive(camera, cameraCount);
+        }
     }
 }

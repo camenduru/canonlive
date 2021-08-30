@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.LiveBox1 = new System.Windows.Forms.PictureBox();
             this.LiveRefreshTimer = new System.Windows.Forms.Timer(this.components);
+            this.KeepAliveTimer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.LiveBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,8 +49,14 @@
             // 
             // LiveRefreshTimer
             // 
-            this.LiveRefreshTimer.Interval = 60;
+            this.LiveRefreshTimer.Interval = 50;
             this.LiveRefreshTimer.Tick += new System.EventHandler(this.LiveRefreshTimer_Tick);
+            // 
+            // KeepAliveTimer
+            // 
+            this.KeepAliveTimer.Enabled = true;
+            this.KeepAliveTimer.Interval = 300000;
+            this.KeepAliveTimer.Tick += new System.EventHandler(this.KeepAliveTimer_Tick);
             // 
             // LiveViewForm
             // 
@@ -73,5 +80,6 @@
 
         private System.Windows.Forms.PictureBox LiveBox1;
         private System.Windows.Forms.Timer LiveRefreshTimer;
+        private System.Windows.Forms.Timer KeepAliveTimer;
     }
 }

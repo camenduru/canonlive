@@ -195,6 +195,24 @@ namespace canonlive
             return err;
         }
 
+        public static uint KeepAlive(IntPtr[] camera, int Count)
+        {
+
+            uint err = 0;
+            uint success;
+            for (int i = 0; i < Count; i++)
+            {
+                success = EDSDK.EdsSendCommand(camera[i], EDSDK.CameraCommand_ExtendShutDownTimer, 0);
+                if (success != EDSDK.EDS_ERR_OK)
+                {
+                    Console.WriteLine("Fail to keep-alive,camera num is:" + i.ToString()
+                                                         + "\t" + success.ToString());
+                    err = (uint)i;
+                }
+            }
+            return err;
+        }
+
         public static void CloseCameras(IntPtr[] Camera, int Count)
         {
             int i;
